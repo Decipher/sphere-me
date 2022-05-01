@@ -1,6 +1,4 @@
-import opn from 'opn'
-
-const baseUrl = process.env.BASE_URL || 'http://quickstart-druxt-serverless.ddev.site'
+const baseUrl = process.env.BASE_URL || 'http://sphere-me.ddev.site'
 
 export default {
   // Target full static build.
@@ -13,7 +11,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'quickstart-druxt-site',
+    title: 'SphereMe',
     htmlAttrs: {
       lang: 'en'
     },
@@ -41,6 +39,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
     ['@nuxt/image', { domains: [baseUrl] }],
     'druxt-site',
   ],
@@ -61,12 +61,14 @@ export default {
     site: { theme: 'bartik' },
   },
 
+  vue: {
+    config: {
+      // Ignore A-Frame elements.
+      ignoredElements: [/^a-/]
+    }
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-
-  hooks: {
-    // Open browser once build is done.
-    'build:done': () => opn('https://localhost:3000')
-  }
 }
