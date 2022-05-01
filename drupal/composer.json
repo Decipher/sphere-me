@@ -25,6 +25,9 @@
         "drupal/core-project-message": "9.3.12",
         "drupal/core-recommended": "9.3.12",
         "drupal/druxt": "1.1.1",
+        "drupal/gin": "^3.0@beta",
+        "drupal/gin_login": "^1.2",
+        "drupal/gin_toolbar": "^1.0@beta",
         "drupal/tome": "^1.7",
         "drush/drush": "^11.0"
     },

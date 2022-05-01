@@ -1,0 +1,14 @@
+uuid: 473b156b-d053-4b39-b8a2-a7a3edfb87e4
+langcode: en
+status: true
+dependencies: {  }
+id: sphere
+label: Sphere
+description: 'A Sphere or 360° panoramic photograph.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

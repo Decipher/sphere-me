@@ -1,0 +1,11 @@
+uuid: 7e76017d-ffbe-48ff-8e04-5d074b3addfc
+langcode: en
+status: true
+dependencies: {  }
+name: Gallery
+type: gallery
+description: 'A Sphere photo gallery.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true
